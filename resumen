@@ -1,0 +1,21 @@
+En la página 27 de CQ-TV 259 (primavera de 2018), Dave G8GKQ produjo una guía para generar su propio código PIC para el ADF4351. Los miembros pueden encontrar este número para descargar aquí https://batc.org.uk/cq-tv/cq-tv-download/ y una copia de baja resolución está disponible aquí Archivo: CQ-TV 259 página 27.JPG
+
+En resumen:
+
+     Descargue y ejecute el software ADF: este programa se usa para generar los códigos de código correctos que luego ingresa en el programa PIC de Ron.
+     Para comenzar, vaya a la pestaña de registros y copie los valores de la línea que comienza con "registros largos sin firmar" de los programas .C de Ron (enlace de descarga arriba)
+     Vaya a la pestaña de controles principales y asegúrese de que la frecuencia y la referencia, etc., estén configuradas en 437 MHz y 25 MHz.
+     En caso afirmativo, cambie la frecuencia y la referencia, etc., según sus necesidades.
+     Corte y pegue los nuevos valores hexadecimales de nuevo en el programa C y guárdelos con un nombre diferente.
+     Ejecute el compilador y el programador en el nuevo archivo como se describe en la guía de Steve a continuación.
+
+Guía de compilación de códigos y programación PIC
+
+
+Una vez que haya descargado el código C de Ron o generado uno propio, deberá compilar y programar en un PIC. Esto se hace usando MPLABX \ v3.51 descargado gratis de Microchip. Cuando se compila, el paquete programa directamente el PIC usando PICKit 3. El compilador es XC8, que también se descarga del mismo sitio y se integra con MPLABX IDE: http://www.microchip.com/mplab/mplab-x-ide
+
+Steve M0SKM ha escrito una guía de compilación y programación en formato .pdf. Esperamos que esta guía anime a otros a construir estos osciladores tan útiles.
+
+Cuando Steve abordó este proyecto por primera vez, buscó software y lo aprendió desde cero. Otros, sin duda, encontrarán métodos alternativos, pero esta forma funcionó para él. Gracias también a Claudio I2NDT que ejecutó la guía con éxito.
+
+La guía se puede descargar aquí Archivo: oscilador local de 7 bandas.pdf.
